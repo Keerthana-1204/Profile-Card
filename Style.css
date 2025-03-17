@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Light mode background */
+    color: #333; /* Light mode text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333; /* Dark mode background */
+        color: #f0f0f0; /* Dark mode text color */
+    }
+}
+
+main {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Light mode main background */
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: #1e1e1e; /* Dark mode main background */
+    }
+
+    h2 {
+        color: #e6c073; /* Adjust h2 color for dark mode */
+    }
+
+    h3 {
+        color: #d699c2; /* Adjust h3 color for dark mode */
+    }
+
+    a {
+        color: #99e6ff; /* Adjust link color for dark mode */
+    }
+
+    a:hover {
+        color: lightcoral; /* Adjust hover color for dark mode */
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white; /* Example background for contrast */
+}
+
+.text-container {
+    margin-left: 20px; /* Add space between image and text */
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    line-height: 1.6;
+    color: #e2a01e;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #c763b3;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100px;
+    height: auto;
+    aspect-ratio: 1/1; /* Maintain aspect ratio for a perfect circle */
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow effect */
+    display: block;
+    margin-right: 15px auto; /* Optional: Rounded corners for images */
+}
